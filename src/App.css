@@ -16,12 +16,18 @@
   background-color: white;
   color: black;
   border: 2px solid #4caf50;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .add-button:hover {
   background-color: #4caf50;
   color: white;
 }
 
+.add-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 .clear-button {
   background-color: #f44336; /* Red */
   border: none;
@@ -37,12 +43,18 @@
   background-color: white;
   color: black;
   border: 2px solid #f44336;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .clear-button:hover {
   background-color: #f44336;
   color: white;
 }
-.add-items{
+.clear-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.add-items {
   background-color: rgb(240, 247, 247);
   display: flex;
   flex-direction: row;
@@ -52,9 +64,31 @@
 }
 ul li {
   background: #98c8fc;
+  border-radius: 6px;
   color: darkblue;
   margin: 5px;
 }
-h1{
-  background-color: rgb(189, 186, 235);
+h1 {
+  background-color: rgb(232, 235, 186);
+}
+
+.list-container {
+  border-radius: 12px;
+  background-color: rgb(231, 247, 13);
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  font-family: fantasy;
+}
+.footer {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  font-family: fantasy;
 }
