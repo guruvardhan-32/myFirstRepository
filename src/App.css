@@ -55,7 +55,7 @@
   transform: translateY(4px);
 }
 .add-items {
-  background-color: rgb(240, 247, 247);
+  background-color: rgb(1, 31, 31);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -69,7 +69,8 @@ ul li {
   margin: 5px;
 }
 h1 {
-  background-color: rgb(232, 235, 186);
+  background-color: rgb(158, 222, 247);
+  text-align: center;
 }
 
 .list-container {
@@ -78,11 +79,14 @@ h1 {
 }
 .header {
   padding: 60px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-  font-size: 30px;
-  font-family: fantasy;
+    text-align: center;
+    background: #f03f4e;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    font-family: fantasy;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .footer {
   padding: 60px;

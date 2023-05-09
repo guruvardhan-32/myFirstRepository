@@ -1,25 +1,39 @@
-import { Outlet, Link } from "react-router-dom";
-
-const Layout = () => {
+import { Link } from "react-router-dom";
+import { React, useState, Fragment } from "react";
+import "./navcss.css";
+const Layout = (props) => {
+  const [changeValue, setChangeValue] = useState("Search Here");
+  let onChange = (event) => {
+    const enterValue = event.target.value;
+    setChangeValue(enterValue);
+  };
   return (
-    <>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/blogs">Blogs</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
+    <Fragment>
+      <nav className="ReactStickyHeader_fixed">
+        <ul className="nav-link">
+          <Link to="/home">
+            <li>Home</li>
+          </Link>
 
-      <Outlet />
-    </>
-  )
+          <Link to="/blogs">
+            <li>Blogs</li>
+          </Link>
+
+          <Link to="/contact">
+            <li>Contact</li>
+          </Link>
+          <Link to="/tutorial">
+            <li>Tutorial</li>
+          </Link>
+        </ul>
+        <input
+          placeholder="enter a Fruit or Vegetable..."
+          onChange={onChange}
+          value={changeValue}
+        />
+      </nav>
+    </Fragment>
+  );
 };
 
 export default Layout;

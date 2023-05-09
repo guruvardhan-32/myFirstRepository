@@ -1,0 +1,72 @@
+
+nav {
+    /* position: fixed;
+     width: 100%; */
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     background-color: rgba(0,0,0,.5);
+     top: 0;
+ }
+  
+ .nav_logo {
+    width: 54px;
+    object-fit: contain;
+    padding-left: 30px;
+    padding-right: 30px;
+ }
+  
+ .nav-links {
+   
+     width: 40%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     list-style: none;
+ }
+  
+ ul {
+     display: contents;
+ }
+  
+ a:-webkit-any-link {
+     text-decoration: none;
+ }
+  
+ li {
+    padding-left: 30px;
+    padding-right: 30px;
+    list-style: none;
+    color: #aaa;
+ }
+ 
+ 
+ li a:hover {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    padding-bottom: 12px;
+    cursor: pointer;
+ }
+ 
+ .ReactStickyHeader_fixed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 60;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+}
+ 
+.nav-right {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    width: 54%;
+    z-index: 1;
+}
+ 
+.nav-menu {
+    width: 25px;
+}
