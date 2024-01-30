@@ -14,8 +14,9 @@ const Fruits = (props) => {
           setNewFruit(event.target.value);
         }}
       ></input>
-      <button onClick={() => {props.add(newFruit)}}>Add New Fruit</button>
+      <button onClick={() => { props.add(newFruit) }}>Add New Fruit</button>
       {showFruits}
+      <p>All the available fruits</p>
     </Fragment>
   );
 };
