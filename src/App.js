@@ -35,7 +35,8 @@ function App() {
           </Routes>
         </Router>
       </div>
-      <footer className="footer">Thanks for vising our Mart</footer>
+      <footer className="footer">Thanks for vising our Mart
+        <p>This is our footer.</p></footer>
     </>
   );
 }
